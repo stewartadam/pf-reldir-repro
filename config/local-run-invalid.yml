@@ -1,0 +1,5 @@
+$schema: https://azuremlschemas.azureedge.net/promptflow/latest/Run.schema.json
+flow: "example-flow" # Path to the flow relative to root
+data: "../datasets/inputs.jsonl" # Path to the data source (Azure ML Dataset) relative to this file
+column_mapping:
+  text: "${data.language}"
